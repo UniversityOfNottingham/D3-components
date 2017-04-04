@@ -1,0 +1,38 @@
+p {
+  margin-bottom: $content-margin;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $face;
+  font-weight: $weight--bold;
+  font-size: 1.5rem;
+  margin-bottom: $content-margin;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: $link;
+}
+
+code {
+  background-color: $background--code;
+  font-family: $face--mono;
+  padding: ($content-margin / 6) ($content-margin / 4);
+  border-radius: 3px;
+}

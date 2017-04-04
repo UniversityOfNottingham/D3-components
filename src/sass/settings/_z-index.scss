@@ -1,0 +1,11 @@
+// The lower down the list an element appearsm the higher the z-index value.
+$z: (
+  'something'
+);
+
+@function z($value) {
+  @if index($z, $value) {
+    @return index($z, $value);
+  }
+  @warn 'Requested value is not included in the z-index list.';
+}

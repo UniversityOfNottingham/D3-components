@@ -1,0 +1,25 @@
+.component {
+  margin: ($content-margin * 2) 0;
+  padding: $content-margin;
+  border: 1px solid $divider--index;
+  &__title {
+    margin-bottom: 0;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__author {
+    font-size: .9rem;
+    margin-bottom: $content-margin;
+  }
+  &__description {
+    margin-bottom: ($content-margin * 2);
+  }
+}
+
+.feature-list {
+  &__item {
+    list-style: disc;
+    margin-left: ($content-margin * 2);
+  }
+}

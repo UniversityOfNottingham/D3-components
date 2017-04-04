@@ -1,0 +1,34 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  // font-smoothing is regarded as standard by the linter: https://github.com/sasstools/sass-lint/issues/824
+  // sass-lint:disable-block no-vendor-prefixes
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  background-color: $background--index;
+  color: $type--index;
+  font-family: $face;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  &.index {
+    padding: 5%;
+    @include mq(medium) {
+      padding-right: 35%;
+    }
+  }
+  &.story-map {
+    background: $background--body;
+    color: $type;
+  }
+}
