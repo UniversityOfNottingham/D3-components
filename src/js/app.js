@@ -1,3 +1,3 @@
-var testComponent = require('./components/_test');
+var regionMap = require('./components/_region-map');
 
-testComponent.hello();
+regionMap.regions();

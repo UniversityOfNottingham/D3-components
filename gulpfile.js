@@ -78,6 +78,7 @@ gulp.task('js', () => {
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
+    .pipe(sourcemaps.init())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dest.js))
     .pipe(browserSync.stream());
@@ -117,7 +118,7 @@ gulp.task('watch', ['default'], () => {
     }
   });
   gulp.watch(`${paths.src.sass}/**/*.scss`, ['css']);
-  gulp.watch(`${paths.src.js}/**/*.{js}`, ['js']);
+  gulp.watch(`${paths.src.js}/**/*.js`, ['js']);
   gulp.watch(`${paths.src.html}/**/*.{html,hbs}`, ['html']);
 });
 
